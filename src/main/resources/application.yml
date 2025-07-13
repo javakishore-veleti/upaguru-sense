@@ -12,7 +12,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
     show-sql: true
     properties:
       hibernate:
@@ -25,7 +25,7 @@ spring:
       uri: ${MONGO_URL:mongodb://localhost:27017/upaguru} # Optional if you want to log prompt/completion interactions
 
 server:
-  port: ${SERVER_PORT:8081} # Different port from copilot to allow parallel runs
+  port: ${SERVER_PORT:8083} # Different port from copilot to allow parallel runs
 
 openai:
   api:
